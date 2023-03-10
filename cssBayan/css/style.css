@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  line-height: normal;
+  background-color: #ede9d5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main {
+  margin: 20px auto;
+  width: 800px;
+}
+
+.horisontal-line {
+  border-bottom: solid 1px black;
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
