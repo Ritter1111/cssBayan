@@ -25,7 +25,7 @@ body {
 }
 
 .title {
-  margin: 0 0 5px 0;
+  margin:0 0 5px 0 ;
 }
 
 .main {
@@ -33,7 +33,7 @@ body {
   width: 50rem;
   border-style: ridge;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .horisontal-line {
@@ -108,17 +108,23 @@ body {
   border-radius: 2rem;
 }
 
+.fa-plus{
+  display: none;
+}
+
 .bayan-content:hover .fa-plus {
   display: flex;
   align-items: center;
 }
 
 .input:checked + .item-label .fa-plus:before {
-  content: "\f00d";
+  transform: rotate(45deg);
+  transition: all ease-in 0.4s;
 }
 
 .header-title-first:hover .fa-plus::before {
-  content: "\f00d";
+  transform: rotate(45deg);
+  transition: all ease-in 0.4s;
 }
 
 @media (max-width: 320px) {
