@@ -25,48 +25,47 @@ body {
   padding: 10px;
 }
 
-.item-label {
-  display: flex;
-  justify-content: space-between;
-}
-
-input {
+.input {
   display: none;
 }
 
-.item-label::after {
-  content: "+";
-  font-size: 2.2rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-label {
+.item-label {
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.input:checked ~ .item-label::after {
-  content: "×";
-}
-
-.input ~ img {
+.header-title-first .image {
   display: none;
   opacity: 0;
-  transition: opacity 0.5s easy;
 }
 
-.input:checked ~ img {
+.input:checked ~ label img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .input ~ label {
   color: blue;
   transition: color 0.7 ease;
+}
+
+.icon-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-solid {
+  display: flex;
+  align-items: center;
+}
+
+.header-title-first:hover .image {
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .input ~ label:hover {
@@ -76,12 +75,17 @@ label {
 
 .input:checked ~ label {
   color: black;
-  transition: color 0.7 ease;
 }
 
-.image{
+.bayan-content:hover * {
+  color: black;
+  transition: color 0.7s ease;
+}
+
+.image {
   width: 350px;
   height: 310px;
+  cursor: pointer;
 }
 
 /* .header-title-first::after {
@@ -100,3 +104,16 @@ label {
   width: 300px;
   height: 250px;
 } */
+
+/* 
+.item-label::after {
+  content: "+";
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.input:checked ~ .item-label::after {
+  content: "×";
+} */
+
