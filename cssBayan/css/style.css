@@ -14,7 +14,6 @@ body {
   );
   display: flex;
   justify-content: center;
-  position: relative;
   font-family: "Archivo Black", sans-serif;
 }
 
@@ -141,21 +140,21 @@ body {
 
 @media (max-width: 414px) {
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
   .text {
-    font-size: 0.5rem;
+    font-size: 1.4rem;
   }
   .image {
     max-width: 100%;
   }
 }
 
-@media (max-width: 912px) {
+@media (min-width: 912px) {
   h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
